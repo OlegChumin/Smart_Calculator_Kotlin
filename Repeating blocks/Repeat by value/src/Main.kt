@@ -1,5 +1,6 @@
+
 fun main() {
-    val number = readln().toInt()
+    val number = Integer.parseInt(readln())
     repeat(number) {
         print(number)
     }
