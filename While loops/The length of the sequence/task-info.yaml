@@ -4,17 +4,13 @@ files:
   visible: true
   text: |-
     fun main() {
-        val line1 = nextLine()
-        val line2 = nextLine()
-
-        println(line1)
-        println(line2)
+        // put your code here
     }
   learner_created: false
-feedback_link: https://hyperskill.org/learn/step/11564#comment
+feedback_link: https://hyperskill.org/learn/step/4665#comment
 status: Solved
 feedback:
   message: <html>Correct solution</html>
-  time: "Wed, 01 Mar 2023 06:30:35 UTC"
+  time: "Wed, 01 Mar 2023 06:49:09 UTC"
 record: -1
 submission_language: kotlin

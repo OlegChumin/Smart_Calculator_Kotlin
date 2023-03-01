@@ -1,4 +1,3 @@
-
 fun main() {
     val line1 = readln()
     val line2 = readln()
