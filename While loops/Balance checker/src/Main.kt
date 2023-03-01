@@ -2,12 +2,11 @@ import java.util.Scanner
 
 fun main() {
     val scanner = Scanner(System.`in`)
-    var balance = scanner.nextLine().toInt()
+    var balance = scanner.nextInt()
     var debit = balance
+    println("balance = $balance")
     while (scanner.hasNextInt()) {
-        if(scanner.hasNext().equals("")) {
-            break
-        } else {debit = scanner.nextInt()}
+        debit = scanner.nextInt()
         if (debit > balance) {
             println("Error, insufficient funds for the purchase. Your balance is $balance, but you need $debit.")
             break;
@@ -18,5 +17,4 @@ fun main() {
     if (debit < balance) {
         println("Thank you for choosing us to manage your account! Your balance is $balance.")
     }
-    scanner.close()
 }
