@@ -17,19 +17,16 @@ files:
 feedback_link: https://hyperskill.org/learn/step/4720#comment
 status: Failed
 feedback:
-  message: |+
-    Failed test #1 of 8. Wrong answer
-
-    This is a sample test from the problem statement!
-
-    Test input:
-    10000
-    5000 3000
-    Correct output:
-    Thank you for choosing us to manage your account! Your balance is 2000.
-
-    Your code output:
-
-  time: "Wed, 01 Mar 2023 08:39:19 UTC"
+  message: "Failed test #1 of 8. Runtime error\n\nThis is a sample test from the problem\
+    \ statement!\n\nTest input:\n10000\n5000 3000\nCorrect output:\nThank you for\
+    \ choosing us to manage your account! Your balance is 2000.\n\nYour code output:\n\
+    \n\nError:\nException in thread \"main\" java.util.NoSuchElementException: No\
+    \ line found\n\tat java.base/java.util.Scanner.nextLine(Scanner.java:1651)\n\t\
+    at MainKt.main(main.kt:8)\n\tat MainKt.main(main.kt)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native\
+    \ Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\
+    \tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\
+    \tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.jetbrains.kotlin.runner.AbstractRunner.run(runners.kt:70)\n\
+    \tat org.jetbrains.kotlin.runner.Main.run(Main.kt:188)\n\tat org.jetbrains.kotlin.runner.Main.main(Main.kt:198)\n"
+  time: "Thu, 02 Mar 2023 10:34:47 UTC"
 record: -1
 submission_language: kotlin
