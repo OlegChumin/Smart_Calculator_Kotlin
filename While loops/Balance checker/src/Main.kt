@@ -1,24 +1,30 @@
 import java.util.Scanner
+
 //        debit = scanner.useDelimiter(System.getProperty("line.separator")).nextInt()
 
 fun main() {
-    var balance = Scanner(System.`in`).nextInt()
+    val scanner = Scanner(System.`in`)
+    var balance = scanner.nextLine().toInt()
     var debit: Int
-    var isPositiveBalance: Boolean
-    val lineOfPurchasesSequence = Scanner(System.`in`).nextLine()
-    val scanner = Scanner(lineOfPurchasesSequence)
-        do {
-            debit = scanner.nextInt()
+    var isPositiveBalance = false
+
+    if (scanner.hasNextLine()) {
+        val lineOfPurchasesSequence = scanner.nextLine()
+        val lineScan = Scanner(lineOfPurchasesSequence)
+
+        while (lineScan.hasNextInt()) {
+            debit = lineScan.nextInt()
             if (debit > balance) {
                 println("Error, insufficient funds for the purchase. Your balance is $balance, but you need $debit.")
                 isPositiveBalance = false
-                break;
+                lineScan.close()
+                break
             }
             balance -= debit
             isPositiveBalance = true
-        } while (scanner.hasNextInt())
-    scanner.close()
-
+        }
+        lineScan.close()
+    }
     if (isPositiveBalance) {
         println("Thank you for choosing us to manage your account! Your balance is $balance.")
     }
