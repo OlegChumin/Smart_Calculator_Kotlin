@@ -1,3 +1,17 @@
+const val ZERO = 0
+
 fun main() {
-    // put your code here
+    println(sumOfElementsFromConsoleInputSequence())
+}
+
+fun sumOfElementsFromConsoleInputSequence(): Int {
+    var readNumber: Int
+    var sum = ZERO
+    do {
+        readNumber = readln().toInt()
+        if (readNumber != ZERO) {
+            sum += readNumber
+        }
+    } while (readNumber != ZERO)
+    return sum
 }
