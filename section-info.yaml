@@ -16,3 +16,4 @@ content:
 - String templates
 - Ranges
 - When expression
+- Default arguments
